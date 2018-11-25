@@ -1,0 +1,41 @@
+body {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+	margin: 0px;
+	padding: 0px;
+}
+
+.jumbotron {
+	background-color: rgba(84, 38, 159, 0.89);
+	color: rgba(10, 5, 5, 0.658);
+}
+
+.random-number {
+	font-size: 30px;
+	background-color: rgb(216, 21, 200);
+	border-style: solid;
+	border-color: rgb(19, 11, 11);
+	border-width: 4px;
+}
+
+.win-lose-counter {
+	background-color: rgb(216, 21, 200);
+	border-style: solid;
+	border-color: rgb(20, 10, 10);
+	border-width: 4px;
+}
+
+.crystal-images {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.total-score {
+	color: rgb(20, 10, 10);
+	background-color: rgb(216, 21, 200);
+}
+
+.score-number {
+	color: rgb(20, 10, 10);
+	background-color: rgb(216, 21, 200);
+	font-size: 30px;
+}
