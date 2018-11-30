@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Crystal Collector</title>
+
+<!--Link to jQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
 <!--Link to reset css-->
 <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
@@ -14,7 +18,9 @@
 <!--Link to style css-->
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-<!--Link to jQuery-->
+<!--Link to google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
 
 
 </head>
@@ -24,54 +30,54 @@
         <h1 class="display-4">Crystals Collector Game</h1>
 </div>
 <div class="container">
+<!--Display Instructions-->
     <div class="row">
-        <div class="col-md-5">  
-                <p class="instructions">You will be given a random numberat the start of the game.</p>
-                <p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
-                <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random numner.</p>
-                <p>The value of each crystal is hidden from you until you click on it.</p>
-                <p>Each time when the game starts, the game will change the values of each crystal.</p>
-        </div>   
-    </div>
-</div>
+        <div class="col-md-12 instructions">  
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random numner.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the values of each crystal.</p>
+        </div> 
+    </div> 
+            
+<!--Display Random Number-->  
+    <div class="row">
+        <div class="col-md-2 target-number"></div>
+        <div class="col-md-1"></div>
 
- 
-    <div class="container">
-        <div class="row">
-    
-          
-            <div class="col-md-1">
+<!--Display Win/Lose Counter-->
+        <div class="col-md-2 win-lose-counter">
+            <div id="wins">
+                Wins : 0
             </div>
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-4 random-number">
-                    </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-4 win-lose-counter">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 crystal-images">
-                    <img src="assets/images/Turquoise-Green.jpg" style="width:100px; height:100px">
-                    <img src="assets/images/rose-quartz-crystal.jpg" style="width:100px; height:100px">
-                    <img src="assets/images/purple grande.jpg" style="width:100px; height:100px">
-                    <img src="assets/images/orange crystal.jpg" style="width:100px; height:100px">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 total-score">
-                        <p>
-                            Your total score is:
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 score-number">
-                    </div>
-                </div>
+            <div id="lose">
+                Losses : 0
             </div>
         </div>
     </div>
-    
+
+<!--Display Crsytals-->
+    <div class="row">
+        <div class="col-md-12 crystal-images"></div>
+    </div>
+
+<!--Display Total Score-->
+    <div class="row">
+        <div class="col-md-12 ">
+            <div class="total-score">
+                Your total score is:
+            </div>
+            <div class="score-number">
+            </div>              
+        </div>
+    </div>
+
+</div>
+        
+
+<!--Link javascript-->
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
 </html>

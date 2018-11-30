@@ -2,19 +2,36 @@ body {
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 	margin: 0px;
 	padding: 0px;
+	font-family: 'Dosis', sans-serif;
+    align-items: center;
+	
 }
 
 .jumbotron {
 	background-color: rgba(84, 38, 159, 0.89);
-	color: rgba(10, 5, 5, 0.658);
+    color: rgba(10, 5, 5, 0.658);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.random-number {
+.instructions {
 	font-size: 30px;
+	color: rgb(14, 1, 17);
+	
+}
+
+.target-number {
+	font-size: 40px;
+	font-style: bold;
 	background-color: rgb(216, 21, 200);
 	border-style: solid;
 	border-color: rgb(19, 11, 11);
-	border-width: 4px;
+    border-width: 4px;
+    width:100px;
+	height: 100px;
+	text-align: center;
+
 }
 
 .win-lose-counter {
@@ -22,6 +39,7 @@ body {
 	border-style: solid;
 	border-color: rgb(20, 10, 10);
 	border-width: 4px;
+	font-size: 30px;
 }
 
 .crystal-images {
@@ -29,13 +47,34 @@ body {
 	margin-bottom: 10px;
 }
 
+.crystal {
+    width:200px;
+    height:200px;
+}
+
 .total-score {
 	color: rgb(20, 10, 10);
 	background-color: rgb(216, 21, 200);
+	height: 50px;
+	width: 300px;
+	font-size: 30px;
+	border-style: solid;
+	border-color: rgb(20, 10, 10);
+	border-width: 4px;
 }
 
 .score-number {
 	color: rgb(20, 10, 10);
-	background-color: rgb(216, 21, 200);
-	font-size: 30px;
+    background-color: rgb(216, 21, 200);
+    height: 150px;
+	width: 300px;
+	font-size: 50px;
+	border-style: solid;
+	border-color: rgb(20, 10, 10);
+	border-width: 4px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+	padding: 20px;
+	margin-bottom: 50px;
 }
